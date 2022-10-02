@@ -11,6 +11,12 @@ function NavBar() {
     <li><Link to="/schema/resposta">Resposta</Link></li>
 </ul>
 <p>Rotas</p>
+<p>Usuarios</p>
+<ul>
+    <li><Link to="/rotas/usuario/signup">SignUp</Link></li>
+    <li><Link to="/rotas/usuario/login">LogIn</Link></li>
+    
+</ul>
 
     </> );
 }
