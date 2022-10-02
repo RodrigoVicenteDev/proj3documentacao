@@ -2,10 +2,27 @@ function SignUp() {
     return ( 
         <>
         <h1>Rota para a criação de usuario</h1>
+        <p><b>Verbo:</b>POST</p>
         <p><b>End Point:</b> /usuario/signup<br></br>
             Retorna um Json com os dados do usuario recem cadastrado:<br></br></p>
 
             <pre>
+
+            <p>Body:</p>
+            <code style={{display:"flex", flexDirection:"column" ,textAlign:"left", 
+  backgroundColor:" #f1f1f1",
+  padding: "2px",
+  width:"1300px"
+  }}>
+    {`{
+	"nome": "Marcelo",
+	"email": "marcelo@gmail.com",
+	"password":"Senhaserura@123"
+}`}
+  </code>
+
+
+              <p>Retorno:</p>
             <code style={{display:"flex", flexDirection:"column" ,textAlign:"left", 
   backgroundColor:" #f1f1f1",
   padding: "2px",
@@ -14,14 +31,14 @@ function SignUp() {
 
 
 {`{
-	"nome": "Rodrigo",
-	"email": "dias@gmail.com",
+	"nome": "Marcelo",
+	"email": "marcelo@gmail.com",
 	"receitas": [],
 	"comentarios": [],
 	"resposta": [],
 	"emailConfirm": false,
-	"profilePic": "https://toppng.com/uploads/preview/instagram-default-profile-picture-11562973083brycehrmyv.png",
-	"_id": "6339020456558b173a46404a",
+	"profilePic": "https://toppng.com/uploads/preview/inst...",
+	"_id": "63399eed644b58bf75958080",
 	"__v": 0
 }
 `}

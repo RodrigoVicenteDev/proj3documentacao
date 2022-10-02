@@ -6,6 +6,16 @@ import SchemaResposta from '../Schemas/resposta';
 import NavBar from '../../components/Navbar';
 import SignUp from '../rotas/siginup';
 import LogIn from '../rotas/login';
+import UsuarioEditar from '../rotas/UsuarioEditar';
+import UsuarioId from '../rotas/usuarioId';
+import Usuariotodos from '../rotas/Usuariotodos';
+import UsuarioLogado from '../rotas/usuariologado';
+import ReceitasCriar from '../rotas/receitaCriar';
+import ReceitasTodas from '../rotas/receitasTodas';
+import ReceitasId from '../rotas/receitaId';
+import ReceitaEditar from '../rotas/ReceitaEditar';
+import ReceitasAddFav from '../rotas/ReceitaAddfav';
+import ReceitaDelFav from '../rotas/ReceitasDellFav';
 import { Routes, Route, Link } from "react-router-dom";
 
 function HomePage() {
@@ -25,6 +35,17 @@ function HomePage() {
      <Route path="/schema/resposta" element={<SchemaResposta/>}/>
      <Route path="/rotas/usuario/signup" element={<SignUp/>}/>
      <Route path="/rotas/usuario/login" element={<LogIn/>}/>
+     <Route path="/rotas/usuario/editar" element={<UsuarioEditar/>}/>
+     <Route path="/rotas/usuario/id" element={<UsuarioId/>}/>
+     <Route path="/rotas/usuario/todos" element={<Usuariotodos/>}/>
+     <Route path="/rotas/usuario/logado" element={<UsuarioLogado/>}/>
+     <Route path="/rotas/receita/criar" element={<ReceitasCriar/>}/>
+     <Route path="/rotas/receita/todas" element={<ReceitasTodas/>}/>
+     <Route path="/rotas/receita/buscar/id" element={<ReceitasId/>}/>
+     <Route path="/rotas/receita/editar" element={<ReceitaEditar/>}/>
+     <Route path="/rotas/receita/favoritos/adicionar" element={<ReceitasAddFav/>}/>
+     <Route path="/rotas/receita/favoritos/excluir" element={<ReceitaDelFav/>}/>
+
 </Routes>
 </div>
 </div>

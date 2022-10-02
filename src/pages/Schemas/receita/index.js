@@ -43,6 +43,7 @@ function SchemaReceita() {
 
         </code>
       </pre>
+      <p>O usuario tera a opçao de fazer o upload da imagem <code style={{backgroundColor: " #f1f1f1", color:"red"}}>imagemupload:</code> ou colar uma URL <code style={{backgroundColor: " #f1f1f1" ,color:"red"}}>imagemurl:</code> direto da internet</p>
     </>
   );
 }

@@ -28,6 +28,7 @@ function SchemaUsuario() {
       <span>  {"  "}  <b>match:</b>{" /^[\w\.]+@([\w-]+\.)+[\w-]{2,4}$/,"}<br></br></span>
      <span>  {" },"}<br></br></span>
     <span>  <b>receitas:</b>{` [{ type: Schema.Types.ObjectId, ref: "Receita" }],`}<br></br></span>
+    <span>  <b>favoritas:</b>{` [{ type: Schema.Types.ObjectId, ref: "Receita" }],`}<br></br></span>
     <span>  <b>comentarios:</b>{` [{ type: Schema.Types.ObjectId, ref: "Comentario" }],`}<br></br></span>
      <span>  <b>resposta:</b> {`[{ type: Schema.Types.ObjectId, ref: "Resposta" }],`}<br></br></span>
      <span>  <b>passwordHash: </b>{`{ type: String, required: true },`}<br></br></span>
