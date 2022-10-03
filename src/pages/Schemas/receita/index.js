@@ -23,6 +23,10 @@ function SchemaReceita() {
  <span>{"  "}<b>nome:</b>{` { type: String, require: true }`},</span>
   <span>{"  "}<b>tempo:</b> {`{ type: Number, require: true }`},</span>
   <span>{"  "}<b>feito:</b>{` { type: Number }`},</span>
+  <span>{"  "}<b>categoria:</b>{`{type:String,
+             enum:["Acompanhamentos e Entradas", "Arroz e Risotos","Bolos e Tortas Doces",
+             "Carne Suína","Carnes","Frangos e Aves","Lanches","Massas",
+             "Peixes e Frutos do Mar","Sobremesas","Sopas"]},`}</span>
  <span>{"  "}<b>dificuldade:</b>{"{"}</span>
    <span>{"    "}type: String,</span>
     <span>{"    "}enum: {`["facil", "medio", "dificil"]`},</span>

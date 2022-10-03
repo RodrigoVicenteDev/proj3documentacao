@@ -2,6 +2,7 @@ import { Routes, Route, Link } from "react-router-dom";
 
 function NavBar() {
     return ( <>
+    <div style={{overflow: "scroll" ,height: "60%", paddingRight:"15px"}}>
    <Link to="/"><p>Principal</p></Link> 
     <p>Schemas</p>
 <ul>
@@ -33,6 +34,23 @@ function NavBar() {
 
 </ul>
 
+<p>Comentarios</p>
+<ul>
+<li><Link to="/rotas/comentario/criar">Criar</Link></li>
+<li><Link to="/rotas/comentario/editar">Editar</Link></li>
+<li><Link to="/rotas/comentario/buscar">popular</Link></li>
+</ul>
+
+<p>Respostas</p>
+<ul>
+<li><Link to="/rotas/resposta/criar">Criar</Link></li>
+<li><Link to="/rotas/resposta/editar">Editar</Link></li>
+<li><Link to="/rotas/resposta/buscar">popular</Link></li>
+</ul>
+
+<Link to="/rotas/delete"><p>Rotas de Delete</p></Link>
+<Link to="/rotas/upload"><p>Rota de UpLoad de imagens</p></Link>
+</div>
     </> );
 }
 

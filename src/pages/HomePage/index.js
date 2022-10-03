@@ -16,7 +16,15 @@ import ReceitasId from '../rotas/receitaId';
 import ReceitaEditar from '../rotas/ReceitaEditar';
 import ReceitasAddFav from '../rotas/ReceitaAddfav';
 import ReceitaDelFav from '../rotas/ReceitasDellFav';
+import ComentarioCriar from '../rotas/comentarioCriar';
+import ComentarioEditar from '../rotas/comentarioEditar';
+import RespostaCriar from '../rotas/rescriar';
+import RespostaEditar from '../rotas/resEditar';
+import RespostaPopular from '../rotas/Respopular';
+import Deletes from '../rotas/deletes';
+import Upload from '../rotas/upload';
 import { Routes, Route, Link } from "react-router-dom";
+import ComentarioBuscar from '../rotas/comentatiobusca';
 
 function HomePage() {
     return ( <>
@@ -45,6 +53,14 @@ function HomePage() {
      <Route path="/rotas/receita/editar" element={<ReceitaEditar/>}/>
      <Route path="/rotas/receita/favoritos/adicionar" element={<ReceitasAddFav/>}/>
      <Route path="/rotas/receita/favoritos/excluir" element={<ReceitaDelFav/>}/>
+     <Route path="/rotas/comentario/criar" element={<ComentarioCriar/>}/>
+     <Route path="/rotas/comentario/editar" element={<ComentarioEditar/>}/>
+     <Route path="/rotas/comentario/buscar" element={<ComentarioBuscar/>}/>
+     <Route path="/rotas/resposta/criar" element={<RespostaCriar/>}/>
+    <Route path="/rotas/resposta/editar" element={<RespostaEditar/>}/>
+    <Route path="/rotas/resposta/buscar" element={<RespostaPopular/>}/>
+    <Route path="/rotas/delete" element={<Deletes/>}/>
+    <Route path="/rotas/upload" element={<Upload/>}/>
 
 </Routes>
 </div>
